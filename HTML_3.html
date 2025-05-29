@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animal Sounds</title>
+  <!-- Link to your external JavaScript file -->
+  <script src="JavaScript/JavaScript_3.js" defer></script>
+</head>
+<body>
+
+  <h1>Animal Sounds</h1>
+  <h3>Click an animal to hear what sound it makes!</h3>
+
+  <ul>
+    <!-- Each list item has a custom data-animal-sound attribute -->
+    <li onclick="playSound(this)" data-animal-sound="Woof!">Dog</li>
+    <li onclick="playSound(this)" data-animal-sound="Meow!">Cat</li>
+    <li onclick="playSound(this)" data-animal-sound="Neigh!">Horse</li>
+    <li onclick="playSound(this)" data-animal-sound="Moo!">Cow</li>
+    <li onclick="playSound(this)" data-animal-sound="Quack!">Duck</li>
+  </ul>
+
+</body>
+</html>
