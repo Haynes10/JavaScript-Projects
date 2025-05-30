@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Delizia Pizza — Fresh & Flavorful</title>
+  <link rel="stylesheet" type="text/css" href="Pizza_CSS/Pizza.css" />
+  <script src="Pizza_JavaScript/Pizza.js" defer></script>
+</head>
+<body>
+
+  <!-- Main Container -->
+  <div id="menuBG">
+
+    <!-- Header Section -->
+    <h1>Delizia Pizza</h1>
+    <h2>Fresh & Flavorful — Build Your Perfect Pizza</h2>
+
+    <!-- Pizza Image Gallery -->
+    <section id="pizzaGallery">
+      <img src="Pizza_Images/pizza1.jpg" alt="Delicious Pepperoni Pizza" />
+      <img src="Pizza_Images/pizza2.jpg" alt="Pizza Maker at Work" />
+      <img src="Pizza_Images/pizza3.jpg" alt="Italian Homemade Cheese Pizza" />
+      <img src="Pizza_Images/pizza4.jpg" alt="Pizza Dough" />
+    </section>
+
+    <!-- Order Button -->
+    <input id="btnOrder" type="button" onclick="getReceipt()" value="Place Order" />
+
+    <!-- Pizza Menu Form -->
+    <form id="frmMenu">
+
+      <!-- Size Options -->
+      <div class="menu left">
+        <h3>Size:</h3>
+        <input class="size" type="radio" name="size" value="Personal Pizza" /> Personal Pizza<br />
+        <input class="size" type="radio" name="size" value="Small Pizza" /> Small Pizza<br />
+        <input class="size" type="radio" name="size" value="Medium Pizza" /> Medium Pizza<br />
+        <input class="size" type="radio" name="size" value="Large Pizza" checked /> Large Pizza<br />
+        <input class="size" type="radio" name="size" value="Extra Large Pizza" /> Extra Large Pizza<br />
+      </div>
+
+      <!-- Meat Toppings -->
+      <div class="menu middle">
+        <h3>Meats:</h3>
+        <input class="toppings" type="checkbox" name="Topping" value="Pepperoni" /> Pepperoni<br />
+        <input class="toppings" type="checkbox" name="Topping" value="Sausage" /> Sausage<br />
+        <input class="toppings" type="checkbox" name="Topping" value="Canadian Bacon" /> Canadian Bacon<br />
+        <input class="toppings" type="checkbox" name="Topping" value="Ground Beef" /> Ground Beef<br />
+        <input class="toppings" type="checkbox" name="Topping" value="Anchovy" /> Anchovy<br />
+        <input class="toppings" type="checkbox" name="Topping" value="Chicken" /> Chicken<br />
+        <input class="toppings" type="checkbox" name="Topping" value="Salami" /> Salami<br />
+      </div>
+
+      <!-- Vegetable Toppings -->
+      <div class="menu right">
+        <h3>Vegetables:</h3>
+        <input class="toppings" type="checkbox" name="Topping" value="Mushrooms" /> Mushrooms<br />
+        <input class="toppings" type="checkbox" name="Topping" value="Onions" /> Onions<br />
+        <input class="toppings" type="checkbox" name="Topping" value="Tomatoes" /> Tomatoes<br />
+        <input class="toppings" type="checkbox" name="Topping" value="Olives" /> Olives<br />
+        <input class="toppings" type="checkbox" name="Topping" value="Green Peppers" /> Green Peppers<br />
+      </div>
+
+      <!-- Cart Display -->
+      <div id="cart">
+        <div id="showText"></div>
+        <div id="totalPrice"></div>
+      </div>
+
+    </form>
+  </div>
+  
+</body>
+</html>

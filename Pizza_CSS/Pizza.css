@@ -1,0 +1,113 @@
+/* Body and Background */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('../Pizza_Images/pizza-background.png') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Main Container */
+#menuBG {
+  background-color: rgba(255, 255, 255, 0.9);
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+/* Header Styles */
+h1 {
+  font-family: 'Georgia', serif;
+  color: #b22222;
+  font-size: 3rem;
+  margin-bottom: 0;
+  text-align: center;
+  text-shadow: 1px 1px 2px #ccc;
+}
+
+h2 {
+  font-family: 'Arial', sans-serif;
+  color: #555;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+/* Pizza Gallery */
+#pizzaGallery {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  gap: 15px;
+}
+
+#pizzaGallery img {
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+#pizzaGallery img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* Menu Layout */
+.menu {
+  float: left;
+  width: 30%;
+  margin-right: 2%;
+  font-family: 'Verdana', sans-serif;
+}
+
+.menu h3 {
+  font-family: 'Verdana', sans-serif;
+  color: #b22222;
+  margin-bottom: 10px;
+}
+
+.menu:last-child {
+  margin-right: 0;
+}
+
+/* Clear floats */
+form::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Cart Section */
+#cart {
+  margin-top: 30px;
+  border-top: 2px solid #b22222;
+  padding-top: 20px;
+  font-size: 1.2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Button */
+#btnOrder {
+  display: block;
+  margin: 20px auto 40px auto;
+  padding: 12px 30px;
+  background-color: #b22222;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(178, 34, 34, 0.6);
+  transition: background-color 0.3s ease;
+}
+
+#btnOrder:hover {
+  background-color: #800000;
+}

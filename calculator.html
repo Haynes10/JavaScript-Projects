@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- This declaration defines the document type and version of HTML being used -->
+
+<html lang="en">
+<!-- The root element of the HTML document, with the language set to English -->
+
+<head>
+  <!-- Contains metadata and links to external resources like CSS and JavaScript -->
+
+  <meta charset="utf-8">
+  <!-- Sets the character encoding of the document to UTF-8 -->
+
+  <title>Calculator</title>
+  <!-- Title of the web page displayed in the browser tab -->
+
+  <meta name="description" content="A basic HTML, CSS and JavaScript Calculator">
+  <!-- Description of the page for search engines and documentation -->
+
+  <meta name="author" content="Your Name Here">
+  <!-- Author of the webpage -->
+
+  <!-- Link to the external CSS file that styles the calculator -->
+  <link rel="stylesheet" href="CSS/calculator_CSS.css">
+
+  <!-- Link to the external JavaScript file that powers the calculator's functionality -->
+  <script src="Javascript/calculator_JavaScript.js" defer></script>
+  <!-- 'defer' makes sure the script loads after the HTML is fully parsed -->
+</head>
+
+<body>
+  <!-- Main content of the web page -->
+
+  <!-- This is the main container that wraps the entire calculator -->
+  <div class="calculator">
+
+    <!-- This input field displays the numbers and results on the calculator screen -->
+    <input type="text" class="calculator-screen" value="0" disabled>
+    <!-- 'disabled' makes the input read-only so users can’t type in it -->
+
+    <!-- This section contains all calculator buttons -->
+    <div class="calculator-keys">
+
+      <!-- Operator buttons: Add, Subtract, Multiply, Divide -->
+      <button type="button" class="operator" value="+">+</button>
+      <button type="button" class="operator" value="-">−</button>
+      <button type="button" class="operator" value="*">&times;</button>
+      <button type="button" class="operator" value="/">÷</button>
+
+      <!-- Number buttons: 7 through 9 -->
+      <button type="button" value="7">7</button>
+      <button type="button" value="8">8</button>
+      <button type="button" value="9">9</button>
+
+      <!-- Number buttons: 4 through 6 -->
+      <button type="button" value="4">4</button>
+      <button type="button" value="5">5</button>
+      <button type="button" value="6">6</button>
+
+      <!-- Number buttons: 1 through 3 -->
+      <button type="button" value="1">1</button>
+      <button type="button" value="2">2</button>
+      <button type="button" value="3">3</button>
+
+      <!-- Number button: 0 -->
+      <button type="button" value="0">0</button>
+
+      <!-- Decimal point button -->
+      <button type="button" class="decimal function" value=".">.</button>
+
+      <!-- All-clear button to reset the calculator -->
+      <button type="button" class="all-clear function" value="all-clear">AC</button>
+
+      <!-- Equal sign button to calculate the result -->
+      <button type="button" class="equal-sign operator" value="=">=</button>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="CSS/CSS_1.css">
+    <!-- Link to external JavaScript file -->
+    <script src="JavaScript_2.js" defer></script>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Contact Us</h2>
+        <!-- Contact form with onsubmit validation -->
+        <form onsubmit="return validateForm()" id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your full name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@mail.com">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Write your message here..."></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Area to show validation messages -->
+        <p id="error-message"></p>
+    </div>
+
+</body>
+</html>
