@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- jQuery CDN (required to use jQuery functions) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    </head>
+    
+    <script>
+        // Wait for the full HTML document to load before running any jQuery code
+        $(document).ready(function () {
+            
+            // Dynamically create and append a <body> element with inner HTML content
+            $("html").append(
+                "<body>\
+                    <div id='container'>\
+                        <div id='inner'>\
+                            <h1>Basic jQuery</h1>\
+                            <p id='1'>Paragraph 1 </p>\
+                            <p id='2'>Paragraph 2 </p>\
+                            <p id='3'>Paragraph 3 </p>\
+                            <!-- ✅ New button for jQuery effect -->\
+                            <button id='fadeButton'>Toggle Fade</button>\
+                            <!-- ✅ New paragraph to apply jQuery fade effect -->\
+                            <p id='fadeText'>This text will fade in and out!</p>\
+                        </div>\
+                    </div>\
+                </body>"
+            );
+
+            // Use jQuery to change the text color of Paragraph 2 to red
+            $("#2").css({ "color": "red" });
+
+            // Add a click event to Paragraph 3 to hide the <h1> heading when clicked
+            $("#3").click(function () {
+                $("h1").hide(); // This uses jQuery's hide() method
+            });
+
+            // Add a click event to the button to fade the text in/out using fadeToggle()
+            $("#fadeButton").click(function () {
+                $("#fadeText").fadeToggle("slow"); // This is a jQuery effect
+            });
+        });
+    </script>
+</html>
